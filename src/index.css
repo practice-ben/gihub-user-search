@@ -4,3 +4,34 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  height: 40px;
+  width: calc(300px + 2vw);
+}
+input {
+  padding-left: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  flex: 1;
+  font-size: 1rem;
+}
+.button {
+  padding-inline: 10px;
+  background: lightgreen;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+}
