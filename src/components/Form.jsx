@@ -8,6 +8,7 @@ export default function Form () {
                 type="text"
                 value={name}
                 placeholder="Enter username or email"
+                required
                 onChange={(e) => setName(e.target.value)} 
             />
             <button type="button" className="button">
