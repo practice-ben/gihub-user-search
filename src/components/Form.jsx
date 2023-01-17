@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Form ({fetchResults}) {
-    const [name, setName] = React.useState("")
+    const [name, setName] = React.useState("");
     return (
         <form onSubmit={(e) => e.preventDefault()} >
             <input 
@@ -9,7 +9,12 @@ export default function Form ({fetchResults}) {
                 value={name}
                 placeholder="Enter username or email"
                 required
-                onChange={(e) => setName(e.target.value)} 
+                onChange={(e) => setName(e.target.value)}
+                onKeyUp={(e) => {
+                    if(e.key === "Enter" && name) {
+                        fetchResults(name)
+                    }
+                }} 
             />
             <button 
                 type="button" 
