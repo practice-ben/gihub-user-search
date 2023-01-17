@@ -23,7 +23,7 @@ export default function App() {
     return (
       <div key={node_id} className="profile" >
         <img src={avatar_url} alt={login} className="image" />
-        <a href={html_url} target="_blank" >{login}</a>
+        <a href={html_url} target="_blank" className="link" >{login}</a>
       </div>
     )
   })
