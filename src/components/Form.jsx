@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Form ({filterResults}) {
+export default function Form ({fetchResults}) {
     const [name, setName] = React.useState("")
     return (
         <form onSubmit={(e) => e.preventDefault()} >
@@ -15,7 +15,7 @@ export default function Form ({filterResults}) {
                 type="button" 
                 className="button" 
                 onClick={() => {
-                    if(name) filterResults(name)
+                    if(name) fetchResults(name)
                     }
                 } 
             >
