@@ -19,11 +19,11 @@ export default function App() {
     }
   }
 
-  const elements = data?.map(({node_id, login, url, avatar_url}) => {
+  const elements = data?.map(({node_id, login, html_url, avatar_url}) => {
     return (
       <div key={node_id} className="profile" >
         <img src={avatar_url} alt={login} className="image" />
-        <a href={url}>{login}</a>
+        <a href={html_url} target="_blank" >{login}</a>
       </div>
     )
   })
