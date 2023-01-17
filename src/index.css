@@ -18,6 +18,8 @@ form {
   display: flex;
   height: 40px;
   width: calc(300px + 2vw);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px salmon;
 }
 input {
   padding-left: 10px;
@@ -25,6 +27,8 @@ input {
   border-bottom-left-radius: 8px;
   flex: 1;
   font-size: 1rem;
+  outline: none;
+  border: none;
 }
 .button {
   padding-inline: 10px;
@@ -49,8 +53,9 @@ input {
   align-items: center;
   gap: 20px;
   padding-block: 10px;
-  border: 1px solid black;
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px salmon;
 }
 .image {
   height: 100px;
